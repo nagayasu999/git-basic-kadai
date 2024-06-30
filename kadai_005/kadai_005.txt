@@ -1,0 +1,20 @@
+NGY:~ nagayasuyasushiki$ mkdir git_challenge
+NGY:~ nagayasuyasushiki$ cd git_challenge
+NGY:git_challenge nagayasuyasushiki$ git init
+Initialized empty Git repository in /Users/nagayasuyasushiki/git_challenge/.git/
+NGY:git_challenge nagayasuyasushiki$ touch hello_world.txt
+NGY:git_challenge nagayasuyasushiki$ echo 'hello_world!' >> hello_world.txt
+NGY:git_challenge nagayasuyasushiki$ git add .
+NGY:git_challenge nagayasuyasushiki$ git commit -m 'hello_world.txtを追加'
+[main (root-commit) 50450a9] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+NGY:git_challenge nagayasuyasushiki$ echo 'こんにちは、世界！' >> hello_world.txt
+NGY:git_challenge nagayasuyasushiki$ git add .
+NGY:git_challenge nagayasuyasushiki$ git commit -m 'こんにちは、世界！'
+[main dc3eb91] こんにちは、世界！
+ 1 file changed, 1 insertion(+)
+NGY:git_challenge nagayasuyasushiki$ git log --oneline
+dc3eb91 (HEAD -> main) こんにちは、世界！
+50450a9 hello_world.txtを追加
+NGY:git_challenge nagayasuyasushiki$ 
